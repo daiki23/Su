@@ -88,7 +88,7 @@ Route::get('/logout', function() {
   return Redirect::to('/home');
 })->middleware('auth');
 
-Route::group( ['middleware' => 'auth' ], function()
+Route::group( ['middleware' => 'admin' ], function()
 {
 #admin page
 
