@@ -70,7 +70,9 @@ public function store()
             'password'=>'required|min:6',
             'cpassword'=>'required|same:password',
             'tel'=>'required',
-            'gambar'=>'required'
+            'gambar'=>'required',
+            'level'=>'required'
+
 
         );
 

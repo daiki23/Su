@@ -36,6 +36,9 @@
   @if($errors->has('username')) {{$errors->first('cpassword')}}@endif {{-- untuk validasi require --}}
 	<input type="password" name="cpassword" placeholder=" Masukkan Password">
 
+	<p>Level</p>
+	<input type="text" name="level" id="level" placeholder="Masukkan level">
+
 	<p>Email</p>
   @if($errors->has('username')) {{$errors->first('email')}}@endif {{-- untuk validasi require --}}
 	<input type="email" name="email" placeholder=" Masukkan Email">
@@ -47,6 +50,7 @@
       			  <div class="form-group">
                   <label for="gambar">Masukkan Foto</label>
                   <input type="file" id="gambar" name="gambar">
+
 
 	<input type="submit" name="submit" value="Daftar" style="margin-bottom: unset;">
 	<a href="/home">Kembali ke Home</a>

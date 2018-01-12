@@ -33,6 +33,8 @@ protected $table="daftar_admins";
 
  	 	$gambar=Input::get('gambar');
 
+ 	 	$level=Input::get('level');
+
  	 	$users=new daftar();
 
  	 	$users->name=$username;
@@ -40,6 +42,7 @@ protected $table="daftar_admins";
  	 	$users->password=$pass;
  	 	$users->tel=$telp;
  	 	$users->gambar=$gambar;
+        $users->level=$level;
 
  	 	$users->save();
 

@@ -46,6 +46,10 @@
 	<p>Nomor Telpon</p>
 	<input type="tel" name="tel" placeholder="Masukkan Nomor Telpon">
 
+
+	<p>Level</p>
+	<input type="text" name="text" placeholder="Masukkan level">
+
 	@if($errors->has('username')) {{$errors->first('tel')}}@endif {{-- untuk validasi require --}}
 	
 	<input type="submit" name="submit" value="Daftar">
